@@ -1,0 +1,18 @@
+---
+import { Award } from "lucide-react";
+
+const historyContent =
+  "Inicialmente enfocados en la reconstrucción de neumáticos, evolucionamos hacia la fabricación de materiales esenciales para procesos de curado, como Bandas Precuradas, Curing Bag, Curing Tube y Envelopes. En 1996, marcamos un hito al convertirnos en el primer productor latinoamericano de Tyre Curing Bladders, consolidándonos como proveedores estratégicos de la industria del neumático en Argentina y América Latina.";
+
+const milestone =
+  "1996 - Primer productor latinoamericano de Tyre Curing Bladders";
+---
+
+<p class="text-muted-foreground">{historyContent}</p>
+
+<div class="flex flex-wrap gap-4 mt-6">
+  <div class="flex items-center space-x-2 bg-background rounded-full px-4 py-2">
+    <Award className="h-4 w-4 text-primary" />
+    <span class="text-sm font-medium">{milestone}</span>
+  </div>
+</div>

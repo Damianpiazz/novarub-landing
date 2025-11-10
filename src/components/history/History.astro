@@ -1,0 +1,23 @@
+---
+import HistoryHeader from "./HistoryHeader.astro";
+import HistoryContent from "./HistoryContent.astro";
+import HistoryImage from "./HistoryImage.jsx";
+---
+
+<section id="historia" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+  <div class="container px-4 md:px-6 mx-auto">
+    <HistoryHeader />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Imagen -->
+      <div class="order-2 md:order-1">
+        <HistoryImage client:visible />
+      </div>
+
+      <!-- Contenido -->
+      <div class="space-y-6 order-1 md:order-2">
+        <HistoryContent />
+      </div>
+    </div>
+  </div>
+</section>

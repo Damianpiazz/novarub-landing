@@ -1,0 +1,42 @@
+---
+import ProductCard from "./ProductCard.astro";
+
+const products = [
+  {
+    title: "Curing Bladders",
+    description: "Moldes internos de caucho para vulcanización bajo calor y presión.",
+    image: "/novarub-landing/bladder.webp",
+  },
+  {
+    title: "Envelopes Externos",
+    description: "Componentes esenciales para recapado que garantizan presión uniforme externa.",
+    image: "https://placeholder.pics/svg/400x190",
+  },
+  {
+    title: "Envelopes Internos (InnerLope)",
+    description: "Ajuste interno para aportar calor y presión uniforme desde dentro.",
+    image: "https://placeholder.pics/svg/400x190",
+  },
+  {
+    title: "Curing Tubes Tipo F",
+    description: "Tubos para autoclave de vacío que aseguran curado uniforme interno.",
+    image: "https://placeholder.pics/svg/400x190",
+  },
+  {
+    title: "Curing Tubes Tipo G",
+    description: "Tubos reforzados para curado con moldes rígidos y alta presión interna.",
+    image: "https://placeholder.pics/svg/400x190",
+  },
+  {
+    title: "Desarrollos Especiales",
+    description: "Soluciones a medida para industrias con requerimientos personalizados.",
+    image: "https://placeholder.pics/svg/400x190",
+  },
+];
+---
+
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {products.map((p) => (
+    <ProductCard title={p.title} description={p.description} image={p.image} />
+  ))}
+</div>

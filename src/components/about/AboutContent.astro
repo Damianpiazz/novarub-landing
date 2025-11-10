@@ -1,0 +1,37 @@
+---
+import AboutStats from "./AboutStats.astro";
+import AboutImages from "./AboutImages.jsx";
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+  <!-- Texto e información -->
+  <div class="space-y-6">
+    <p class="text-muted-foreground">
+      Desde hace más de 50 años, <strong>Novarub</strong> se ha consolidado como referente en la
+      investigación, desarrollo y fabricación de soluciones para el curado y armado de neumáticos.
+      Nuestra trayectoria y compromiso con la calidad nos permiten ofrecer productos confiables y
+      eficaces que responden a las más altas exigencias del mercado.
+    </p>
+
+    <p class="text-muted-foreground">
+      Ubicada en <strong>Las Flores, Buenos Aires</strong>, nuestra planta industrial cuenta con la
+      tecnología necesaria para diseñar y producir bladders, tubos y envelopes adaptados a múltiples
+      aplicaciones. Gracias a un equipo técnico altamente especializado, desarrollamos soluciones que
+      optimizan el rendimiento de cada etapa del proceso productivo, garantizando eficiencia,
+      durabilidad e innovación constante.
+    </p>
+
+    <p class="text-muted-foreground">
+      En <strong>Novarub</strong>, trabajamos junto a nuestros clientes para brindar respuestas
+      efectivas a los desafíos de la industria del neumático.
+    </p>
+
+    <!-- Mismo bloque de estadísticas -->
+    <AboutStats />
+  </div>
+
+  <!-- Bloque de imágenes (idéntico al original) -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <AboutImages client:visible />
+  </div>
+</div>
